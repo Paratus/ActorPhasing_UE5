@@ -1,0 +1,54 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0.0",
+	"FriendlyName": "Actor Phasing",
+	"Description": "WoW-style actor phasing for multiplayer games: volume-gated phase membership, replication-level visibility, cross-phase collision and interaction filtering, and idle-phase notifications. Works on the standard replication driver out of the box, with optional adapter modules for Replication Graph and Iris. No engine changes.",
+	"Category": "Networking",
+	"CreatedBy": "Artisan Gameworks Inc.",
+	"CreatedByURL": "https://exordiumgame.com",
+	"DocsURL": "https://exordiumgame.com/actor-phasing",
+	"MarketplaceURL": "",
+	"SupportURL": "https://exordiumgame.com/actor-phasing/support",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Modules": [
+		{
+			"Name": "ActorPhasing",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [
+				"Win64",
+				"Linux",
+				"Mac"
+			]
+		},
+		{
+			"Name": "ActorPhasingReplicationGraph",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [
+				"Win64",
+				"Linux",
+				"Mac"
+			]
+		},
+		{
+			"Name": "ActorPhasingIris",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [
+				"Win64",
+				"Linux",
+				"Mac"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "ReplicationGraph",
+			"Enabled": true
+		}
+	]
+}
